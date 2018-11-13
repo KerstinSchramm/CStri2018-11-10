@@ -1,0 +1,212 @@
+[info] Playing test case TS_TASKI_TestAutomation_Trivago / TC_1_Search
+[info] Time: Mon Nov 12 2018 20:34:16 GMT+0100 (MitteleuropÃ¤ische Normalzeit) Timestamp: 1542051256935
+[info] OS: Windows Version: 10
+[info] Browser: Firefox Version: 63.0
+[info] If the test cannot start, please refresh the active browser tab
+[info] Executing: | open | http://magazine.trivago.com/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Destinations'])[1]/preceding::div[1] | |
+[info] Executing: | type | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::input[1] | carnival |
+[info] Executing: | sendKeys | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::input[1] | ${KEY_ENTER} |
+[info] Expand variable '${KEY_ENTER}' into 'î€‡'
+[info] Wait for all ajax requests to be done
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Canada'])[2]/following::span[1] | |
+[info] Wait for all ajax requests to be done
+[info] Executing: | assertTextPresent | | Carnival |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Destinations'])[1]/preceding::div[1] | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::input[1] | |
+[info] Executing: | type | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::input[1] | qwertzui |
+[info] Executing: | sendKeys | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::input[1] | ${KEY_ENTER} |
+[info] Expand variable '${KEY_ENTER}' into 'î€‡'
+[info] Wait for all ajax requests to be done
+[info] Executing: | assertTextPresent | | No results |
+[info] Executing: | assertTextPresent | | Try adjusting your search or look at some of our most popular and newest articles. |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::input[1] | |
+[info] Executing: | type | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Search'])[1]/following::input[1] | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Destinations'])[1]/preceding::a[1] | |
+[info] Time: Mon Nov 12 2018 20:34:38 GMT+0100 (MitteleuropÃ¤ische Normalzeit) Timestamp: 1542051278301
+[info] Test case passed
+[info] Playing test case TS_TASKI_TestAutomation_Trivago / TC_2_Contact
+[info] Time: Mon Nov 12 2018 20:34:39 GMT+0100 (MitteleuropÃ¤ische Normalzeit) Timestamp: 1542051279425
+[info] OS: Windows Version: 10
+[info] Browser: Firefox Version: 63.0
+[info] If the test cannot start, please refresh the active browser tab
+[info] Executing: | open | http://magazine.trivago.com/ | |
+[info] Executing: | click | link=Contact | |
+[info] Executing: | selectWindow | win_ser_1 | |
+[info] Expand variable 'win_ser_1' into 'win_ser_1'
+[info] Executing: | assertLocation | http://magazine.trivago.com/contact/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='All Fields are required.'])[1]/following::button[1] | |
+[info] Executing: | assertText | xpath=(.//*[normalize-space(text()) and normalize-space(.)='By submitting a message on our contact form you are sharing what you write with trivago.'])[1]/following::span[1] | Please mark the checkbox. |
+[info] Executing: | click | id=confirm | |
+[info] Executing: | assertText | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Please provide a valid email address.'])[1]/following::span[1] | All Fields are required. |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Your Message'])[1]/following::textarea[1] | |
+[info] Executing: | type | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Your Message'])[1]/following::textarea[1] | my messsage |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='All Fields are required.'])[1]/following::button[1] | |
+[info] Executing: | assertText | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Please provide a valid email address.'])[1]/following::span[1] | All Fields are required. |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Full Name'])[1]/following::input[1] | |
+[info] Executing: | type | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Full Name'])[1]/following::input[1] | my name |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='All Fields are required.'])[1]/following::button[1] | |
+[info] Executing: | assertText | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Please provide a valid email address.'])[1]/following::span[1] | All Fields are required. |
+[info] Executing: | click | id=contact-email | |
+[info] Executing: | type | id=contact-email | mymail@testmail.com |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='All Fields are required.'])[1]/following::button[1] | |
+[info] Wait for all ajax requests to be done
+[info] Executing: | assertText | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Whether your idea of romantic getaways in Florida is a weeke...'])[1]/following::p[1] | Message Sent Successfully! |
+[info] Executing: | close | win_ser_1 | |
+[info] Expand variable 'win_ser_1' into 'win_ser_1'
+[info] Executing: | selectWindow | win_ser_local | |
+[info] Expand variable 'win_ser_local' into 'win_ser_local'
+[info] Time: Mon Nov 12 2018 20:34:57 GMT+0100 (MitteleuropÃ¤ische Normalzeit) Timestamp: 1542051297465
+[info] Test case passed
+[info] Playing test case TS_TASKI_TestAutomation_Trivago / TC_3_NewsletterSubscription
+[info] Time: Mon Nov 12 2018 20:34:58 GMT+0100 (MitteleuropÃ¤ische Normalzeit) Timestamp: 1542051298372
+[info] OS: Windows Version: 10
+[info] Browser: Firefox Version: 63.0
+[info] If the test cannot start, please refresh the active browser tab
+[info] Executing: | open | http://magazine.trivago.com/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Please enter a valid e-mail address'])[2]/following::button[1] | |
+[info] Executing: | assertText | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Elevate your next hotel experience!'])[1]/following::div[3] | Please enter a valid e-mail address |
+[info] Executing: | assertText | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Please enter a valid e-mail address'])[1]/following::div[1] | Please mark the checkbox. |
+[info] Executing: | assertValue | id=confirm | off |
+[info] Executing: | click | id=confirm | |
+[info] Executing: | assertValue | id=confirm | on |
+[info] Executing: | click | name=email | |
+[info] Executing: | type | name=email | mymail@testmail.com |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Please enter a valid e-mail address'])[2]/following::button[1] | |
+[info] Wait for all ajax requests to be done
+[info] Executing: | assertText | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Southwest'])[3]/following::p[1] | You are now checked-in! |
+[error] Actual value '' did not match 'You are now checked-in!'
+[info] Time: Mon Nov 12 2018 20:35:07 GMT+0100 (MitteleuropÃ¤ische Normalzeit) Timestamp: 1542051307335
+[info] Test case failed
+[info] Playing test case TS_TASKI_TestAutomation_Trivago / TC_4_NavigtionToDestination
+[info] Time: Mon Nov 12 2018 20:35:08 GMT+0100 (MitteleuropÃ¤ische Normalzeit) Timestamp: 1542051308253
+[info] OS: Windows Version: 10
+[info] Browser: Firefox Version: 63.0
+[info] If the test cannot start, please refresh the active browser tab
+[info] Executing: | open | http://magazine.trivago.com/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Destinations'])[1]/preceding::div[2] | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Southwest'])[1]/following::div[4] | |
+[info] Wait for all ajax requests to be done
+[info] Executing: | assertTextPresent | | Midwest |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Midwest'])[4]/following::span[1] | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Whether your idea of romantic getaways in Florida is a weeke...'])[1]/following::a[1] | |
+[info] Wait for all ajax requests to be done
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Destinations'])[1]/preceding::a[1] | |
+[info] Time: Mon Nov 12 2018 20:35:21 GMT+0100 (MitteleuropÃ¤ische Normalzeit) Timestamp: 1542051321583
+[info] Test case passed
+[info] Playing test case TS_TASKI_TestAutomation_Trivago / TC_5_1_CountrySelection
+[info] Time: Mon Nov 12 2018 20:35:22 GMT+0100 (MitteleuropÃ¤ische Normalzeit) Timestamp: 1542051322611
+[info] OS: Windows Version: 10
+[info] Browser: Firefox Version: 63.0
+[info] If the test cannot start, please refresh the active browser tab
+[info] Executing: | open | http://magazine.trivago.com/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Southwest'])[3]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Southwest'])[3]/following::select[1] | label=Italia |
+[info] Executing: | click | id=it_IT | |
+[info] Executing: | assertLocation | http://magazine.trivago.it/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clicca qui per maggiori informazioni'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clicca qui per maggiori informazioni'])[1]/following::select[1] | label=EspaÃ±a |
+[info] Executing: | click | id=es_ES | |
+[info] Executing: | assertLocation | http://magazine.trivago.es/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='AquÃ­ tienes mÃ¡s informaciÃ³n'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='AquÃ­ tienes mÃ¡s informaciÃ³n'])[1]/following::select[1] | label=Deutschland |
+[info] Executing: | click | id=de_DE | |
+[info] Executing: | assertLocation | http://magazine.trivago.de/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hier finden Sie mehr Informationen dazu.'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Hier finden Sie mehr Informationen dazu.'])[1]/following::select[1] | label=France |
+[info] Executing: | click | id=fr_FR | |
+[info] Executing: | assertLocation | http://magazine.trivago.fr/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Plus dâ€™informations ici'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Plus dâ€™informations ici'])[1]/following::select[1] | label=USA |
+[info] Executing: | click | id=en_US | |
+[info] Executing: | assertLocation | http://magazine.trivago.com/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Southwest'])[3]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Southwest'])[3]/following::select[1] | label=Canada |
+[info] Executing: | assertLocation | http://magazine.trivago.ca/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sign me up!'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sign me up!'])[1]/following::select[1] | label=é¦™æ¸¯ |
+[info] Executing: | assertLocation | http://magazine.trivago.hk/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='å®Œæˆ'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='å®Œæˆ'])[1]/following::select[1] | label=Australia |
+[info] Executing: | assertLocation | http://magazine.trivago.com.au/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Inspire me'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Inspire me'])[1]/following::select[1] | label=Suomi |
+[info] Executing: | assertLocation | http://magazine.trivago.fi/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='RekisterÃ¶idy'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='RekisterÃ¶idy'])[1]/following::select[1] | label=TÃ¼rkiye |
+[info] Executing: | assertLocation | http://magazine.trivago.com.tr/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Burada daha fazla bilgiye ulaÅŸabilirsiniz.'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Burada daha fazla bilgiye ulaÅŸabilirsiniz.'])[1]/following::select[1] | label=Brasil |
+[info] Executing: | assertLocation | http://magazine.trivago.com.br/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Eu quero!'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Eu quero!'])[1]/following::select[1] | label=Portugal |
+[info] Executing: | assertLocation | http://magazine.trivago.pt/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clique aqui para obter mais informaÃ§Ãµes.'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Clique aqui para obter mais informaÃ§Ãµes.'])[1]/following::select[1] | label=MÃ©xico |
+[info] Executing: | assertLocation | http://magazine.trivago.com.mx/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Suscribir'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Suscribir'])[1]/following::select[1] | label=Ireland |
+[info] Executing: | assertLocation | http://magazine.trivago.ie/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sign me up'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sign me up'])[1]/following::select[1] | label=United Kingdom |
+[info] Executing: | assertLocation | http://magazine.trivago.co.uk/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Here is more information'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Here is more information'])[1]/following::select[1] | label=Î•Î»Î»Î¬Î´Î± |
+[info] Executing: | assertLocation | http://magazine.trivago.gr/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Î•Î´ÏŽ Î¸Î± Î²ÏÎµÎ¯Ï„Îµ Ï€ÎµÏÎ¹ÏƒÏƒÏŒÏ„ÎµÏÎµÏ‚ Ï€Î»Î·ÏÎ¿Ï†Î¿ÏÎ¯ÎµÏ‚.'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Î•Î´ÏŽ Î¸Î± Î²ÏÎµÎ¯Ï„Îµ Ï€ÎµÏÎ¹ÏƒÏƒÏŒÏ„ÎµÏÎµÏ‚ Ï€Î»Î·ÏÎ¿Ï†Î¿ÏÎ¯ÎµÏ‚.'])[1]/following::select[1] | label=Danmark |
+[info] Executing: | assertLocation | http://magazine.trivago.dk/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Find flere oplysninger her'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Find flere oplysninger her'])[1]/following::select[1] | label=Norge |
+[info] Executing: | assertLocation | http://magazine.trivago.no/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Her finner du mer informasjon.'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Her finner du mer informasjon.'])[1]/following::select[1] | label=Sverige |
+[info] Executing: | assertLocation | http://magazine.trivago.se/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='LÃ¤s mer hÃ¤r.'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='LÃ¤s mer hÃ¤r.'])[1]/following::select[1] | label=Singapore |
+[info] Executing: | click | id=sg | |
+[info] Executing: | assertLocation | http://magazine.trivago.sg/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sign Up'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sign Up'])[1]/following::select[1] | label=Argentina |
+[info] Executing: | click | id=es_AR | |
+[info] Executing: | assertLocation | http://magazine.trivago.com.ar/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Suscribir'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Suscribir'])[1]/following::select[1] | label=Nederland |
+[info] Executing: | click | id=nl_NL | |
+[info] Executing: | assertLocation | http://magazine.trivago.nl/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sturen'])[1]/following::select[1] | |
+[info] Executing: | select | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Sturen'])[1]/following::select[1] | label=USA |
+[info] Time: Mon Nov 12 2018 20:38:32 GMT+0100 (MitteleuropÃ¤ische Normalzeit) Timestamp: 1542051512684
+[info] Test case passed
+[info] Playing test case TS_TASKI_TestAutomation_Trivago / TC_5_2_ThemesSelection
+[info] Time: Mon Nov 12 2018 20:38:33 GMT+0100 (MitteleuropÃ¤ische Normalzeit) Timestamp: 1542051513645
+[info] OS: Windows Version: 10
+[info] Browser: Firefox Version: 63.0
+[info] If the test cannot start, please refresh the active browser tab
+[info] Executing: | open | http://magazine.trivago.com/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Destinations'])[1]/preceding::div[2] | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Southeast'])[1]/following::div[6] | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Themes'])[1]/following::div[6] | |
+[info] Wait for all ajax requests to be done
+[info] Executing: | assertLocation | http://magazine.trivago.com/theme/family-vacations/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Destinations'])[1]/preceding::span[3] | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Family Vacations'])[1]/following::div[3] | |
+[info] Wait for all ajax requests to be done
+[info] Executing: | assertLocation | http://magazine.trivago.com/theme/budget/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Destinations'])[1]/preceding::div[2] | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Budget'])[1]/following::div[3] | |
+[info] Executing: | assertLocation | http://magazine.trivago.com/theme/best-weekend-getaways/ | |
+[info] Wait for all ajax requests to be done
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Destinations'])[1]/preceding::div[2] | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Weekend Getaways'])[1]/following::div[3] | |
+[info] Wait for all ajax requests to be done
+[info] Executing: | assertLocation | http://magazine.trivago.com/theme/best-us-cities-to-visit/ | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Destinations'])[1]/preceding::span[3] | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Themes'])[1]/following::div[6] | |
+[info] Wait for all ajax requests to be done
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Destinations'])[1]/preceding::div[2] | |
+[info] Executing: | click | xpath=(.//*[normalize-space(text()) and normalize-space(.)='Destinations'])[1]/preceding::span[2] | |
+[info] Executing: | close | win_ser_local | |
+[info] Expand variable 'win_ser_local' into 'win_ser_local'
+[info] Time: Mon Nov 12 2018 20:39:06 GMT+0100 (MitteleuropÃ¤ische Normalzeit) Timestamp: 1542051546511
+[info] Test case passed

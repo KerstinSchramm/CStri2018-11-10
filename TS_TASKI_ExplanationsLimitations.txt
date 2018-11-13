@@ -1,0 +1,33 @@
+TASKI Test Automation (Software Development Engineer Test)
+Author: Kerstin Schramm
+Date: 2018-11-12
+
+1. Search for location: carnival
+2. Contact form: mymail@testmail.com
+3. Newsletter Subscription: mymail@testmail.com
+4. Destination: Southwest
+5. 1. Switch of country/language 
+   2. Selection of themes in the menu on the top left
+   
+Explanation to 5.1. and 5.2.:
+5.1.Switch of country/language 
+	At the moment there are 22 countries listed in this selection box. Possibly there can be hundreds more entries. 
+    To verify that after a changement each selected entry still opens the correct website, an automated test simplifies 
+	the testing a lot. Whereas the addition of new test steps should be a manageable work.
+
+5.2.Selection of themes in the menu on the top left
+	At the moment there are 4 themes listed but there could be many themes more. 
+	To verify that after a changement each selected theme still opens the correct topic, an automated test simplifies 
+	the testing a lot. Whereas the addition of new test steps should be a manageable work.
+
+Limitations of the testsuite:
+General limitations: 
+- Tested Browser: Firefox 63.0.1
+- Browser window has to be fullsize
+TestCase specific limitations: 
+1. the used test article always needs to be uploaded or an article should be uploaded automatically before the test execution and deleted automatically after the test execution
+3. subscription can only be done once, this is the record of the test, after in executing, the test fails because the mail already exists
+
+
+
+
